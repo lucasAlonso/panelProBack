@@ -21,7 +21,7 @@ const Project = sequelize.define('project', {
 }, { timestamps: false });
 
 Project.hasMany(Task, {
-    foreingKey: 'projectId'
+    foreingKey: 'projectId',
     sourceKey: 'id'
 })
 Task.belongsTo(Project, {

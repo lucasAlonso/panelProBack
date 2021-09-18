@@ -15,7 +15,7 @@ const Task = sequelize.define('task', {
     description: {
         type: Sequelize.TEXT
     },
-    projectId {
+    projectId: {
         type: Sequelize.INTEGER
     }
 }, { timestamps: false });

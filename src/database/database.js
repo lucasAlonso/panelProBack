@@ -1,18 +1,17 @@
 import Sequelize from "sequelize";
 
-export const new Sequelize(
+export const sequelize = new Sequelize(
     'postgres',
     'postgres',
-    'passwd',
-    {
+    'passwd', {
         host: 'localhost',
         dialect: 'postgres',
-        pool:{
+        pool: {
             max: 5,
             min: 0,
             require: 30000,
             idle: 1000
-        }
+        },
         logging: false
     }
 
