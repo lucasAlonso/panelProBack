@@ -15,10 +15,9 @@ const Task = sequelize.define('task', {
     description: {
         type: Sequelize.TEXT
     },
-    projectId: {
+    projectid: {
         type: Sequelize.INTEGER
     }
 }, { timestamps: false });
 
-
-export default Task;
+module.exports = Task;

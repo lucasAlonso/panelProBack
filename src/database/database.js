@@ -6,6 +6,7 @@ export const sequelize = new Sequelize(
     'passwd', {
         host: 'localhost',
         dialect: 'postgres',
+
         pool: {
             max: 5,
             min: 0,
